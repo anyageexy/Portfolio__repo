@@ -1,110 +1,6 @@
-/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    /* стили */
-    }
-    
-    /* Smartphones (горизонтальная) ----------- */
-    @media only screen and (min-width: 321px) {
-    /* стили */
-    }
-    
-    /* Smartphones (вертикальная) ----------- */
-    @media only screen and (max-width: 320px) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная и горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* стили */
-    }
-    
-    /* iPads (горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* стили */
-    }
-    
-    /* iPad 3**********/
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* Настольные компьютеры и ноутбуки ----------- */
-    @media only screen  and (min-width: 1224px) {
-    /* стили */
-    }
-    
-    /* Большие экраны ----------- */
-    @media only screen  and (min-width: 1824px) {
-    /* стили */
-    }
-    
-    /* iPhone 4 ----------- */
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* iPhone 5 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6 ----------- */
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6+ ----------- */
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-
-
-
-
+*{
+    box-sizing: border-box;
+}
 @media only screen and (min-width: 375px) and (max-height: 500px) and (orientation: landscape){
     .wrapper{
         top:calc(50% - 6%);
@@ -119,9 +15,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
     }
     .navigation{
-        height: 70vh;
     }
     .contacts{
         display: none;
@@ -134,6 +33,10 @@
     }
     nav{
         width: 6%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
     }
 }
 @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape){
@@ -158,12 +61,12 @@
         display: flex;
         flex-direction: row;
         justify-content:center;
-        height: 8vh;
-        
+        height: 8vh !important;
         width: 100%;
         position: absolute;
         top: 0;
         z-index: 101;
+        position: fixed;
     }
     .navigation{
         max-height: 100%;
@@ -184,6 +87,46 @@
     }
     .contacts{
         display: none;
+    }
+    /*ABOUT*/
+    .about_wrapper{
+        margin-top: 10vh !important;
+    }
+    .about_after-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100vh;
+    }
+    .about_foto{
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+        max-width: 100%;
+        
+    }
+    .about_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 50%;
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        padding:0 7%;
+    }
+    .li_title{
+        text-align: center;
+        font-size: 20px;
+    }
+    .about_text li{
+        padding: 10px 0;
+        list-style-type: circle;
+    }
+    .about_foto img{
+        max-width: 80%;
     }
 }
 @media only screen and (min-width: 400px) and (max-height: 850px) and (orientation: portrait){
@@ -242,8 +185,284 @@
     }
 }
 @media only screen and (max-width: 500px) and (min-height: 600px) and (orientation: portrait){
-    h1{
-        font-size: 1.5rem;
+    .wrapper h1{
+        font-size:20px;
+    }
+}
+@media (max-height:900px) and (max-width:900px) and (orientation: landscape){
+    .about_text li{
+        padding: 13px 0 !important;
+        font-size: 14px;
+    }
+    .about_foto img{
+        max-width: 70%;
+    }
+    .li_title{
+        font-size: 20px !important;
+    }
+}
+@media (max-height:400px) and (max-width:700px) and (orientation: landscape){
+    .about_text li{
+        padding: 7px 0 !important;
+        font-size: 12px;
+    }
+    .about_foto img{
+        max-width: 80%;
+    }
+    .li_title{
+        font-size: 18px !important;
+    }
+}
+@media (max-height: 300px) and (max-width: 660px) and (orientation: landscape){
+    .about_text li{
+        padding: 5px 0 !important;
+        font-size: 12px;
+    }
+    .about_foto img{
+        max-width: 65%;
+    }
+    .li_title{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width:550px) and (min-height:700px) and (orientation:portrait){
+    .about_text li{
+        font-size: 17px;
+    }
+    .li_title{
+        font-size: 20px !important;
+    }
+    
+}
+@media(min-width: 700px) and (min-height:500px) and (orientation:landscape){
+    .about_foto img{
+        max-width: 80%;
+    }
+    .wrapper h1{
+        font-size: 25px;
+    }
+}
+@media(min-height:1000px) and (min-width:600px) and (orientation:portrait){
+    .about_text li{
+        font-size: 25px;
+    }
+    .li_title{
+        font-size: 35px !important;
+    }
+    .about_foto img{
+        max-width: 100%;
+    }
+    .about_text{
+        min-height: 50%;
+    }
+    .wrapper h1{
+        font-size: 30px;
+    }
+}
+@media(min-height:1280px) and (min-width:700px) and (orientation:portrait){
+    .about_text li{
+        font-size: 30px;
+        padding: 20px 0 !important;
+    }
+    .li_title{
+        font-size: 45px !important;
+    }
+    .about_foto img{
+        max-width: 100%;
+    }
+    .about_text{
+        min-height: 50%;
+    }
+    .wrapper h1{
+        font-size: 40px;
+    }
+}
+@media(min-height:1000px) and (max-height:1400px) and (min-width:1300px) and (max-width:2000px) and (orientation:landscape){
+    .about_text li{
+        font-size: 35px;
+        padding: 20px 0 !important;
+    }
+    .li_title{
+        font-size: 55px !important;
+    }
+    .about_foto img{
+        max-width: 90%;
+    }
+    .wrapper h1{
+        font-size: 45px;
+    }
+}
+@media (min-height:1401px) and (min-width:2001px) and (orientation:landscape){
+    .about_after-title{
+        justify-content: space-around !important;
+        height: 100%;
+        padding:0 !important;
+    }
+    .about_foto{
+        min-width: 50%;
+        max-width: 50%;
+        padding: 0 !important;
+    }
+    .about_text li{
+        font-size: 50px;
+        padding: 35px 0 !important;
+    }
+    .li_title{
+        font-size: 80px !important;
+    }
+    .about_foto img{
+        max-width: 90%;
+        min-width: 90%;
+    }
+    .wrapper h1{
+        font-size: 50px;
+    }
+}
+/* @media(min-height:1300px) and (min-width:1000px) and (orientation:landscape){
+    .wrapper h1{
+        font-size: 50px;
+    }
+} */
+
+/*SKILLS*/
+@media (orientation: portrait){
+    .skills_wrapper{
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 8vh;
+    }
+    .diagrams_wrapper{
+        max-width: 100%;
+        min-width: 100%;
+        height: 100%;
+        grid: repeat(3, 10vh) / repeat(5, 1fr);
+    }
+    .skills_text{
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 14px;
+    }
+    .skills_list{
+        margin: 0 auto;
+        max-width: 90%;
+        min-width: 90%;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+@media (orientation:portrait) and (min-width:360px) and (max-width:450px) and (min-height:700px){
+    .skills_text{
+        font-size: 16px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+@media (orientation:portrait) and (min-width:450px) and (max-width:600px) and (min-height:700px){
+    .skills_text{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+@media (orientation:portrait) and (min-width:600px) and (max-width:800px){
+    .skills_text{
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+@media (orientation:portrait) and (min-width:800px) and (max-width:1100px){
+    .skills_text{
+        font-size: 30px;
+        padding-bottom: 60px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 250px;
+        max-height: 250px;
     }
 }
 
+/*ДЛЯ ГОРИЗОНТАЛЬНЫХ ЭКРАНОВ*/
+@media(orientation: landscape){
+    .skills_wrapper{
+        max-height: 100vh !important;
+        max-width: 100%;
+    }
+    .skills_text{
+        max-width: 45%;
+        min-width: 45%;
+        max-height: 100% !important;
+        padding-left: 0 !important;
+    }
+    .diagrams_wrapper{
+        max-width: 45%;
+        min-width: 45%;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-height: 100% !important;
+    }
+}
+@media(orientation: landscape) and (max-width:600px){
+    .skills_text{
+        font-size: 10px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 85px;
+        max-height: 85px;
+    }
+}
+@media(orientation: landscape) and (max-width:800px) and (min-width:600px){
+    .skills_text{
+        font-size: 12px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 100px;
+        max-height: 100px; 
+    }
+}
+@media(orientation: landscape) and (max-width:1000px) and (min-width:800px) and (max-height: 600px){
+    .skills_text{
+        font-size: 14px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+@media(orientation: landscape) and (max-width:1000px) and (min-width:800px) and (min-height: 600px){
+    .skills_text{
+        font-size: 16px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+@media(orientation: landscape) and (max-width:2000px) and (min-width:1000px){
+    .skills_text{
+        font-size: 30px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 190px;
+        max-height: 190px;
+    }
+}
+@media(orientation: landscape) and (max-width:2000px) and (min-width:1000px) and (max-height: 800px){
+    .skills_text{
+        font-size: 20px;
+    }
+    #myChart-1, #myChart-2, #myChart-3,#myChart-4, #myChart-5{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
