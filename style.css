@@ -15,7 +15,8 @@ canvas{
     display: block;  
 } 
 a{
-    outline: none;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
 }
 /* ---- particles.js container ---- */ 
 #particles-js{ 
