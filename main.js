@@ -30,4 +30,5 @@ particlesJS(
         } 
         requestAnimationFrame(update); }; requestAnimationFrame(update);
 
-        
+
+            

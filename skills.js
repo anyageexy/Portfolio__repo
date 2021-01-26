@@ -18,7 +18,10 @@ new Chart(document.getElementById("myChart-1"), {
       title: {
         display: true,
         text: 'HTML',
-        position: 'bottom'
+        position: 'bottom',
+        fontColor: '#fff',
+        fontStyle: 'normal',
+        fontFamily: "'Montserrat', sans-serif",
         
       },
       tooltips: {
@@ -50,7 +53,10 @@ new Chart(document.getElementById("myChart-2"), {
     title: {
       display: true,
       text: 'CSS',
-      position: 'bottom'
+      position: 'bottom',
+      fontColor: '#fff',
+        fontStyle: 'normal',
+        fontFamily: "'Montserrat', sans-serif",
     },
     tooltips: {
       enabled: false
@@ -81,7 +87,10 @@ new Chart(document.getElementById("myChart-3"), {
     title: {
       display: true,
       text: 'JS',
-      position: 'bottom'
+      position: 'bottom',
+      fontColor: '#fff',
+        fontStyle: 'normal',
+        fontFamily: "'Montserrat', sans-serif",
       
     },
     tooltips: {
@@ -113,7 +122,10 @@ new Chart(document.getElementById("myChart-4"), {
     title: {
       display: true,
       text: 'Bootstrap',
-      position: 'bottom'
+      position: 'bottom',
+      fontColor: '#fff',
+        fontStyle: 'normal',
+        fontFamily: "'Montserrat', sans-serif",
       
     },
     tooltips: {
@@ -145,7 +157,10 @@ new Chart(document.getElementById("myChart-5"), {
     title: {
       display: true,
       text: 'JQuery',
-      position: 'bottom'
+      position: 'bottom',
+      fontColor: '#fff',
+        fontStyle: 'normal',
+        fontFamily: "'Montserrat', sans-serif",
       
     },
     tooltips: {
