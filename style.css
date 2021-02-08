@@ -309,9 +309,14 @@ nav{
     justify-content: space-around;
 
 }
+
 .work_foto{
     max-width: 40%;
     min-width: 40%;
+}
+.work_foto-4{
+    max-width: 50%;
+    min-width: 50%;
 }
 .work_foto img{
     object-fit: contain;
@@ -322,6 +327,7 @@ nav{
     box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.315);
     /* border-radius: 5px; */
 }
+
 .work_text{
     max-width: 35%;
     min-width: 35%;
@@ -330,7 +336,7 @@ nav{
     justify-content: center;
     color:#ffffffde;
 }
-.work_wrapper-2{
+.work_wrapper-2, .work_wrapper-4{
     flex-direction: row-reverse;
 }
 .work_foto :hover{
