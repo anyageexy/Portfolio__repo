@@ -408,6 +408,7 @@ nav{
 .contact-img{
     max-width: 50%;
     min-width: 50%;
+    padding-top:10vh;
 }
 .img-contact-object{
     max-width: 90%;
@@ -415,5 +416,4 @@ nav{
 }
 .img-contact{
     max-width: 90%;
-   
 }
