@@ -372,10 +372,12 @@ nav{
 .contact_wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color:#ffffff;
     padding-left:10vw;
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height:70vh;
+    max-height: 70vh;
+    padding-top: 20vh;
 }
 .contacts_container-landscape{
     display: block;
@@ -402,4 +404,16 @@ nav{
     color:#ffffff;
     font-weight: 600;
     text-decoration: underline;
+}
+.contact-img{
+    max-width: 50%;
+    min-width: 50%;
+}
+.img-contact-object{
+    max-width: 100%;
+    min-width: 100%;
+}
+.img-contact{
+    max-width: 100%;
+   
 }
